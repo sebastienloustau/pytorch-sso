@@ -7,7 +7,7 @@ try:
     from cupy import cuda
     from cupy.cuda import cublas
     from cupy.cuda import device
-    from cupy.linalg import util
+    from cupy.linalg import _util as util
     if cuda.cusolver_enabled:
         from cupy.cuda import cusolver
     from torchsso.utils.cupy import to_cupy, from_cupy
